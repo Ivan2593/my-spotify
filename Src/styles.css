@@ -9,6 +9,9 @@
     height: 100vh;
     width: 100%;
     overflow: hidden;
+    grid-template-areas:
+        "menu-area content-area"
+        "footer-area footer-area";
     grid-template-columns: 250px 1fr;
     grid-template-rows: 1fr min-content;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -17,16 +20,18 @@
 .menu {
     padding: 20px;
     background-color: black;
+    grid-area: menu-area;
+    z-index: 3;
 }
 
 .footer {
-    grid-column: 1 / 3;
+    grid-area: footer-area;
 }
 
 .footer-unregistered {
     display: flex;
     justify-content: space-between;
-    background: linear-gradient(to right ,#c11ade, cornflowerblue);
+    background: linear-gradient(to right ,#c11ade, #6495ED);
     padding: 20px 20px 20px 40px;
     align-items: center;
     cursor: pointer;
@@ -59,7 +64,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     background-color: #1d1d1d;
-    padding: 20px 20px 20px 20px;
+    padding: 20px;
     align-items: center;
 }
 
@@ -104,7 +109,7 @@
 }
 
 .oval-button_text {
-    color: cornflowerblue;
+    color: #6495ED;
 }
 
 .menu__tags {
@@ -127,18 +132,19 @@
     background-color: #202020;
     overflow: auto;
     padding-top: 60px;
+    min-width: 500px;
+    grid-area: content-area;
 }
 
 .header {
+    grid-area: content-area;
+    height: 60px;
+    min-width: 0;
+    z-index: 2;
     display: flex;
     align-items: center;
     padding: 4px 40px;
     background-color: #141414;
-    grid-column: 1 / 3;
-    top: 0;
-    height: 60px;
-    position: fixed;
-    width: calc(100% - 250px);
 }
 
 .header__navigation {
@@ -233,9 +239,12 @@
 }
 
 .catalog__albums {
+    column-gap: 20px;
     display: grid;
-    grid-template-columns: repeat(7, 1fr);
-    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fill,minmax(200px,1fr));
+    grid-auto-rows: 0;
+    grid-template-rows: 1fr;
+    overflow: hidden;
 }
 
 .album:hover {
@@ -269,13 +278,12 @@
     opacity: 0.6;
 }
 
-
-
 .album-head {
     display: flex;
     height: 280px;
-    background: linear-gradient(gainsboro, grey);
+    background: linear-gradient(#DCDCDC, #808080);
     padding: 20px;
+    overflow: hidden;
 }
 
 .album-head__info {
@@ -320,6 +328,7 @@
     border-radius: 5px;
     font-size: 14px;
     align-items: center;
+    overflow: hidden;
 }
 
 .song__play-icon {
@@ -328,6 +337,7 @@
 }
 .song__card-icon {
     width: 40px;
+    height: 40px;
     margin-right: 15px;
 }
 

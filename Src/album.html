@@ -3,142 +3,149 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-, initial-scale=1.0">
+    <meta name="description" content="Spotify is a digital music service that gives you access to millions of songs.">
     <title>album</title>
     <link rel="stylesheet" href="styles.css"/>
 </head>
 <body class="app">
+    <header class="header">
+        <nav class="header__navigation">
+            <a href="/" class="link header__pointer"><</a>
+            <a href="/" class="link header__pointer">></a>
+        </nav>
+        <nav class="header__login">
+            <a href="/" class="link">
+                <div class="oval-button">
+                    <h5 class="registration-text">ЗАРЕГЕСТРИРОВАТЬСЯ</h5>
+                </div>
+            </a>
+            <a href="/" class="link">
+                <div class="oval-button header__button-singin">
+                    <h5 class="singin-text">ВОЙТИ</h5>
+                </div>
+            </a>
+        </nav>
+    </header>
     <aside class="menu">
-        <a class="menu__logo-link"><img class="menu__logo" src="image/logo.png" alt="logo"/></a>
+        <a class="menu__logo-link"><img class="menu__logo" src="%PUBLIC_URL%/logo.png" alt="logo"/></a>
         <ul class="menu__tags">
             <a class="menu__item">
-                <img class="menu__icon" src="image/home.png" alt="home"/>
+                <img class="menu__icon" src="%PUBLIC_URL%/home.png" alt="home"/>
                 <li class="tag" tabindex="0">Главная</li>
             </a>
             <a class="menu__item">
-                <img class="menu__icon" src="image/search.png" alt="search"/>
+                <img class="menu__icon" src="%PUBLIC_URL%/search.png" alt="search"/>
                 <li class="tag" tabindex="0">Поиск</li>
             </a>
             <a class="menu__item">
-                <img class="menu__icon" src="image/media.png" alt="media"/>
+                <img class="menu__icon" src="%PUBLIC_URL%/media.png" alt="media"/>
                 <li class="tag" tabindex="0">Моя медиатека</li>
             </a>
         </ul>
     </aside>
     <main class="content">
-        <header class="header">
-            <nav class="header__navigation">
-                <a href="/" class="link header__pointer"><</a>
-                <a href="/" class="link header__pointer">></a>
-            </nav>
-            <nav class="header__login">
-                <a href="/" class="link">
-                    <div class="oval-button">
-                        <h5 class="registration-text">ЗАРЕГЕСТРИРОВАТЬСЯ</h5>
-                    </div>
-                </a>
-                <a href="/" class="link">
-                    <div class="oval-button header__button-singin">
-                        <h5 class="singin-text">ВОЙТИ</h5>
-                    </div>
-                </a>
-            </nav>
-        </header>
-        <div class="playlist">
-            <div class="album-head">
-                <img class="album-head__icon" src="image/1.jpg" alt="icon"/>
-                <div class="album-head__info">
-                    <p class="album-head__white-text">ПЛЕЙЛИСТ</p>
-                    <h1 class="album-head__name">Peace</h1>
-                    <p class="album-head__description">Peaceful instrumentals to help you keep calm.</p>
-                    <div class="album-head__playlist" style="display: flex">
-                        <a class="album-head__white-text link">Spotify</a>
-                        <p class="album-head__white-text">794 361 лайк</p>
-                        <p class="album-head__white-text">270 треков,</p>
-                        <p class="album-head__white-text" style="opacity: 0.6"> примерно 13 ч.</p>
-                    </div>
+        <div class="album-head">
+            <img class="album-head__icon" src="%PUBLIC_URL%/1.jpg" alt="icon"/>
+            <div class="album-head__info">
+                <p class="album-head__white-text">ПЛЕЙЛИСТ</p>
+                <h1 class="album-head__name">Peace</h1>
+                <p class="album-head__description">Peaceful instrumentals to help you keep calm.</p>
+                <div class="album-head__playlist" style="display: flex">
+                    <a class="album-head__white-text link">Spotify</a>
+                    <p class="album-head__white-text">794 361 лайк</p>
+                    <p class="album-head__white-text">270 треков,</p>
+                    <p class="album-head__white-text" style="opacity: 0.6"> примерно 13 ч.</p>
                 </div>
             </div>
-            <div class="table-songs">
-                <p class="song__info">#</p>
-                <p>НАЗВАНИЕ</p>
-                <p>АЛЬБОМ</p>
-                <p>ДАТА ДОБАВЛЕНИЯ</p>
-                <p class="song__info">ВРЕМЯ</p>
+        </div>
+        <div class="table-songs">
+            <p class="song__info">#</p>
+            <p>НАЗВАНИЕ</p>
+            <p>АЛЬБОМ</p>
+            <p>ДАТА ДОБАВЛЕНИЯ</p>
+            <p class="song__info">ВРЕМЯ</p>
+        </div>
+        <div class="songs">
+            <div class="song">
+                <a href="./" class="song__number">
+                    <p class="song__number-n">1</p>
+                    <img class="song__play-icon" src="%PUBLIC_URL%/play-icon.png" alt="icon"/>
+                </a>
+                <div class="song__title">
+                    <img class="song__card-icon" src="%PUBLIC_URL%/1.jpg" alt="icon"/>
+                    <div>
+                        <h3 class="song__name">Timeless</h3>
+                        <a class="song__author">Cristoforo Giordano</a>
+                    </div>
+                </div>
+                <a class="song__author">Hourglass</a>
+                <p class="song__data">12 дней назад</p>
+                <div class="song__info">
+                    <img class="favourite-icon song__play-icon" src="%PUBLIC_URL%/not-favorite-icon.png" alt="icon"/>
+                    <p class="song__time">2:58</p>
+                    <img class="favourite-icon song__play-icon" src="%PUBLIC_URL%/info-icon.png" alt="icon"/>
+                </div>
             </div>
-            <div class="songs">
-                <div class="song">
-                    <a href="./" class="song__number">
-                        <p class="song__number-n">1</p>
-                        <img class="song__play-icon" src="image/play-icon.png" alt="icon"/>
-                    </a>
-                    <div class="song__title">
-                        <img class="song__card-icon" src="image/1.jpg" alt="icon"/>
-                        <div>
-                            <h3 class="song__name">Timeless</h3>
-                            <a class="song__author">Cristoforo Giordano</a>
-                        </div>
-                    </div>
-                    <a class="song__author">Hourglass</a>
-                    <p class="song__data">12 дней назад</p>
-                    <div class="song__info">
-                        <img class="favourite-icon song__play-icon" src="image/not-favorite-icon.png" alt="icon"/>
-                        <p class="song__time">2:58</p>
-                        <img class="favourite-icon song__play-icon" src="image/info-icon.png" alt="icon"/>
+            <div class="song">
+                <a href="./" class="song__number">
+                    <p class="song__number-n">1</p>
+                    <img class="song__play-icon" src="%PUBLIC_URL%/play-icon.png" alt="icon"/>
+                </a>
+                <div class="song__title">
+                    <img class="song__card-icon" src="%PUBLIC_URL%/1.jpg" alt="icon"/>
+                    <div>
+                        <h3 class="song__name">Timeless</h3>
+                        <a class="song__author">Cristoforo Giordano</a>
                     </div>
                 </div>
-                <div class="song">
-                    <a href="./" class="song__number">
-                        <p class="song__number-n">1</p>
-                        <img class="song__play-icon" src="image/play-icon.png" alt="icon"/>
-                    </a>
-                    <div class="song__title">
-                        <img class="song__card-icon" src="image/1.jpg" alt="icon"/>
-                        <div>
-                            <h3 class="song__name">Timeless</h3>
-                            <a class="song__author">Cristoforo Giordano</a>
-                        </div>
-                    </div>
-                    <a class="song__author">Hourglass</a>
-                    <p class="song__data">12 дней назад</p>
-                    <div class="song__info">
-                        <img class="favourite-icon song__play-icon" src="image/not-favorite-icon.png" alt="icon"/>
-                        <p class="song__time">2:58</p>
-                        <img class="favourite-icon song__play-icon" src="image/info-icon.png" alt="icon"/>
+                <a class="song__author">Hourglass</a>
+                <p class="song__data">12 дней назад</p>
+                <div class="song__info">
+                    <img class="favourite-icon song__play-icon" src="%PUBLIC_URL%/not-favorite-icon.png" alt="icon"/>
+                    <p class="song__time">2:58</p>
+                    <img class="favourite-icon song__play-icon" src="%PUBLIC_URL%/info-icon.png" alt="icon"/>
+                </div>
+            </div>
+            <div class="song">
+                <a href="./" class="song__number">
+                    <p class="song__number-n">1</p>
+                    <img class="song__play-icon" src="%PUBLIC_URL%/play-icon.png" alt="icon"/>
+                </a>
+                <div class="song__title">
+                    <img class="song__card-icon" src="%PUBLIC_URL%/1.jpg" alt="icon"/>
+                    <div>
+                        <h3 class="song__name">Timeless</h3>
+                        <a class="song__author">Cristoforo Giordano</a>
                     </div>
                 </div>
-                <div class="song">
-                    <a href="./" class="song__number">
-                        <p class="song__number-n">1</p>
-                        <img class="song__play-icon" src="image/play-icon.png" alt="icon"/>
-                    </a>
-                    <div class="song__title">
-                        <img class="song__card-icon" src="image/1.jpg" alt="icon"/>
-                        <div>
-                            <h3 class="song__name">Timeless</h3>
-                            <a class="song__author">Cristoforo Giordano</a>
-                        </div>
-                    </div>
-                    <a class="song__author">Hourglass</a>
-                    <p class="song__data">12 дней назад</p>
-                    <div class="song__info">
-                        <img class="favourite-icon song__play-icon" src="image/not-favorite-icon.png" alt="icon"/>
-                        <p class="song__time">2:58</p>
-                        <img class="favourite-icon song__play-icon" src="image/info-icon.png" alt="icon"/>
-                    </div>
+                <a class="song__author">Hourglass</a>
+                <p class="song__data">12 дней назад</p>
+                <div class="song__info">
+                    <img class="favourite-icon song__play-icon" src="%PUBLIC_URL%/not-favorite-icon.png" alt="icon"/>
+                    <p class="song__time">2:58</p>
+                    <img class="favourite-icon song__play-icon" src="%PUBLIC_URL%/info-icon.png" alt="icon"/>
                 </div>
             </div>
         </div>
     </main>
     <footer class="footer">
-        <a class="footer-unregistered">
-            <div class="footer-unregistered__text">
-                <h5 class="footer-unregistered__info">ПРЕДВАРИТЕЛЬНЫЙ ПРОСМОТР SPOTIFY</h5>
-                <p class="footer-unregistered__info">Зарегестрируйся, чтобы слушать музыку и подкасты без ограничений. Иногда мы будем показывать рекламу, но ты сможешь пользоваться сервисом бесплатно!</p>
+        <div class="footer-login">
+            <div class="footer-login__song">
+                <img class="footer-login__song-icon" src="%PUBLIC_URL%/1.jpg" alt="icon"/>
+                <div class="footer-login__song-info">
+                    <a class="footer-login__song-name link">Timeless</a>
+                    <a class="footer-login__song-author link">Cristoforo Giordano</a>
+                </div>
             </div>
-            <div class="oval-button footer-unregistered__button">
-                <h4 class="oval-button__text">ЗАРЕГИСТРИРОВАТЬСЯ</h4>
+            <div class="footer-login__player">
+                <img class="footer-login__player-icon" src="%PUBLIC_URL%/begin.png" alt="icon"/>
+                <img class="footer-login__player-icon" src="%PUBLIC_URL%/footer-play-icon.png" alt="icon"/>
+                <img class="footer-login__player-icon" src="%PUBLIC_URL%/end.png" alt="icon"/>
             </div>
-        </a>
+            <div class="footer-login__info">
+                <img class="footer-login__sound-icon" src="%PUBLIC_URL%/sound-icon.png" alt="icon"/>
+            </div>
+        </div>
     </footer>
 </body>
 </html>
