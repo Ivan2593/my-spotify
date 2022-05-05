@@ -1,6 +1,7 @@
 import React from 'react';
 import Header from "./Header";
 import Menu from "./Menu";
+import Footer from "./Footer";
 
 function Album() {
 
@@ -96,6 +97,7 @@ function Album() {
                     </div>
                 </div>
             </main>
+            <Footer/>
         </div>
     );
 }
