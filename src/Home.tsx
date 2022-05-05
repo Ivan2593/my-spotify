@@ -16,42 +16,42 @@ function Home() {
                     <a className="catalog__completely">ВСЕ</a>
                 </div>
                 <div className="catalog__albums">
-                    <div className="album">
+                    <a href="/album" className="album">
                         <img className="album__card-icon" src="image/1.jpg" alt="icon"/>
                         <h3 className="album__name">Peace</h3>
                         <p className="album__info">Peaceful instrumentals to help you keep calm.</p>
-                    </div>
-                    <div className="album">
+                    </a>
+                    <a href="/album" className="album">
                         <img className="album__card-icon" src="image/1.jpg" alt="icon"/>
                         <h3 className="album__name">Peace</h3>
                         <p className="album__info">Peaceful instrumentals to help you keep calm.</p>
-                    </div>
-                    <div className="album">
+                    </a>
+                    <a href="album" className="album">
                         <img className="album__card-icon" src="image/1.jpg" alt="icon"/>
                         <h3 className="album__name">Peace</h3>
                         <p className="album__info">Peaceful instrumentals to help you keep calm.Peaceful instrumentals to
                             help you keep calm.Peaceful instrumentals to help you keep calm.</p>
-                    </div>
-                    <div className="album">
+                    </a>
+                    <a href="/album" className="album">
                         <img className="album__card-icon" src="image/1.jpg" alt="icon"/>
                         <h3 className="album__name">Peace</h3>
                         <p className="album__info">Peaceful instrumentals to help you keep calm.</p>
-                    </div>
-                    <div className="album">
+                    </a>
+                    <a href="/album" className="album">
                         <img className="album__card-icon" src="image/1.jpg" alt="icon"/>
                         <h3 className="album__name">Peace</h3>
                         <p className="album__info">Peaceful instrumentals to help you keep calm.</p>
-                    </div>
-                    <div className="album">
+                    </a>
+                    <a href="/album" className="album">
                         <img className="album__card-icon" src="image/1.jpg" alt="icon"/>
                         <h3 className="album__name">Peace</h3>
                         <p className="album__info">Peaceful instrumentals to help you keep calm.</p>
-                    </div>
-                    <div className="album">
+                    </a>
+                    <a href="/album" className="album">
                         <img className="album__card-icon" src="image/1.jpg" alt="icon"/>
                         <h3 className="album__name">Peace</h3>
                         <p className="album__info">Peaceful instrumentals to help you keep calm.</p>
-                    </div>
+                    </a>
                 </div>
             </div>
             <div className="catalog">
@@ -60,37 +60,37 @@ function Home() {
                     <a className="catalog__completely">ВСЕ</a>
                 </div>
                 <div className="catalog__albums">
-                    <div className="album">
+                    <a href="/album" className="album">
                         <img className="album__card-icon" src="image/1.jpg" alt="icon"/>
                         <h3 className="album__name">Peace</h3>
                         <p className="album__info">Peaceful instrumentals to help you keep calm.</p>
-                    </div>
-                    <div className="album">
+                    </a>
+                    <a href="/album" className="album">
                         <img className="album__card-icon" src="image/1.jpg" alt="icon"/>
                         <h3 className="album__name">Peace</h3>
                         <p className="album__info">Peaceful instrumentals to help you keep calm.</p>
-                    </div>
-                    <div className="album">
+                    </a>
+                    <a href="album" className="album">
                         <img className="album__card-icon" src="image/1.jpg" alt="icon"/>
                         <h3 className="album__name">Peace</h3>
                         <p className="album__info">Peaceful instrumentals to help you keep calm.Peaceful instrumentals to
                             help you keep calm.Peaceful instrumentals to help you keep calm.</p>
-                    </div>
-                    <div className="album">
+                    </a>
+                    <a href="/album" className="album">
                         <img className="album__card-icon" src="image/1.jpg" alt="icon"/>
                         <h3 className="album__name">Peace</h3>
                         <p className="album__info">Peaceful instrumentals to help you keep calm.</p>
-                    </div>
-                    <div className="album">
+                    </a>
+                    <a href="/album" className="album">
                         <img className="album__card-icon" src="image/1.jpg" alt="icon"/>
                         <h3 className="album__name">Peace</h3>
                         <p className="album__info">Peaceful instrumentals to help you keep calm.</p>
-                    </div>
-                    <div className="album">
+                    </a>
+                    <a href="/album" className="album">
                         <img className="album__card-icon" src="image/1.jpg" alt="icon"/>
                         <h3 className="album__name">Peace</h3>
                         <p className="album__info">Peaceful instrumentals to help you keep calm.</p>
-                    </div>
+                    </a>
                 </div>
             </div>
             <div className="catalog">
@@ -99,42 +99,42 @@ function Home() {
                     <a className="catalog__completely">ВСЕ</a>
                 </div>
                 <div className="catalog__albums">
-                    <div className="album">
+                    <a href="/album" className="album">
                         <img className="album__card-icon" src="image/1.jpg" alt="icon"/>
                         <h3 className="album__name">Peace</h3>
                         <p className="album__info">Peaceful instrumentals to help you keep calm.</p>
-                    </div>
-                    <div className="album">
+                    </a>
+                    <a href="/album" className="album">
                         <img className="album__card-icon" src="image/1.jpg" alt="icon"/>
                         <h3 className="album__name">Peace</h3>
                         <p className="album__info">Peaceful instrumentals to help you keep calm.</p>
-                    </div>
-                    <div className="album">
+                    </a>
+                    <a href="album" className="album">
                         <img className="album__card-icon" src="image/1.jpg" alt="icon"/>
                         <h3 className="album__name">Peace</h3>
                         <p className="album__info">Peaceful instrumentals to help you keep calm.Peaceful instrumentals to
                             help you keep calm.Peaceful instrumentals to help you keep calm.</p>
-                    </div>
-                    <div className="album">
+                    </a>
+                    <a href="/album" className="album">
                         <img className="album__card-icon" src="image/1.jpg" alt="icon"/>
                         <h3 className="album__name">Peace</h3>
                         <p className="album__info">Peaceful instrumentals to help you keep calm.</p>
-                    </div>
-                    <div className="album">
+                    </a>
+                    <a href="/album" className="album">
                         <img className="album__card-icon" src="image/1.jpg" alt="icon"/>
                         <h3 className="album__name">Peace</h3>
                         <p className="album__info">Peaceful instrumentals to help you keep calm.</p>
-                    </div>
-                    <div className="album">
+                    </a>
+                    <a href="/album" className="album">
                         <img className="album__card-icon" src="image/1.jpg" alt="icon"/>
                         <h3 className="album__name">Peace</h3>
                         <p className="album__info">Peaceful instrumentals to help you keep calm.</p>
-                    </div>
-                    <div className="album">
+                    </a>
+                    <a href="/album" className="album">
                         <img className="album__card-icon" src="image/1.jpg" alt="icon"/>
                         <h3 className="album__name">Peace</h3>
                         <p className="album__info">Peaceful instrumentals to help you keep calm.</p>
-                    </div>
+                    </a>
                 </div>
             </div>
         </main>
