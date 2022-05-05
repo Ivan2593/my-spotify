@@ -73,10 +73,6 @@
     align-items: center;
 }
 
-.footer-login__song {
-    display: flex
-}
-
 .footer-login__song-icon {
     width: 50px;
 }
@@ -84,15 +80,6 @@
 .footer-login__song-info{
     display: grid;
     margin-left: 10px;
-}
-
-.footer-login__song-name {
-    color: white;
-}
-
-.footer-login__song-author {
-    color: white;
-    opacity: 0.6;
 }
 
 .footer-login__player {
@@ -213,14 +200,6 @@
     opacity: 0.6;
 }
 
-.menu__logo-link {
-    cursor: pointer;
-}
-
-.catalog__heading {
-    color: white;
-}
-
 .catalog {
     padding: 25px;
 }
@@ -236,10 +215,6 @@
     opacity: 0.6;
     color: white;
     font-size: 13px;
-    cursor: pointer;
-}
-
-.catalog__link {
     cursor: pointer;
 }
 
@@ -289,10 +264,6 @@
     background: linear-gradient(#DCDCDC, #808080);
     padding: 20px;
     overflow: hidden;
-}
-
-.album-head__playlist {
-    display: flex;
 }
 
 .album-head__info {
@@ -362,7 +333,7 @@
     opacity: 0.6;
 }
 
-.song__title{
+.flex-container{
     display: flex;
 }
 
@@ -412,4 +383,8 @@
 
 .visibility {
     opacity: 0.6;
+}
+
+.cursor-visibility{
+    cursor: pointer;
 }

@@ -1,34 +1,13 @@
 import React from 'react';
+import Header from "./Header";
+import Menu from "./Menu";
 
 function Album() {
 
     return (
         <div className="App">
-            <header className="header">
-                <nav className="header__navigation">
-                    <a href="/" className="link header__pointer">
-                        назад
-                    </a>
-                    <a href="/" className="link header__pointer">вперед</a>
-                </nav>
-            </header>
-            <aside className="menu">
-                <a className="menu__logo-link"><img className="menu__logo" src="image/logo.png" alt="logo"/></a>
-                <ul className="menu__tags">
-                    <a className="menu__item">
-                        <img className="menu__icon" src="image/home.png" alt="home"/>
-                        <li className="tag">Главная</li>
-                    </a>
-                    <a className="menu__item">
-                        <img className="menu__icon" src="image/search.png" alt="search"/>
-                        <li className="tag">Поиск</li>
-                    </a>
-                    <a className="menu__item">
-                        <img className="menu__icon" src="image/media.png" alt="media"/>
-                        <li className="tag">Моя медиатека</li>
-                    </a>
-                </ul>
-            </aside>
+            <Header/>
+            <Menu/>
             <main className="content">
                 <div className="album-head">
                     <img className="album-head__icon" src="image/1.jpg" alt="icon"/>
@@ -36,7 +15,7 @@ function Album() {
                         <p className="album-head__white-text">ПЛЕЙЛИСТ</p>
                         <h1 className="album-head__name">Peace</h1>
                         <p className="album-head__description">Peaceful instrumentals to help you keep calm.</p>
-                        <div className="album-head__playlist">
+                        <div className="flex-container">
                             <a className="album-head__white-text link">Spotify</a>
                             <p className="album-head__white-text">794 361 лайк</p>
                             <p className="album-head__white-text">270 треков,</p>
@@ -57,7 +36,7 @@ function Album() {
                             <p className="song__number-n">1</p>
                             <img className="song__play-icon" src="image/play-icon.png" alt="icon"/>
                         </a>
-                        <div className="song__title">
+                        <div className="flex-container">
                             <img className="song__card-icon" src="image/1.jpg" alt="icon"/>
                             <div>
                                 <h3 className="song__name">Timeless</h3>
@@ -78,7 +57,7 @@ function Album() {
                             <p className="song__number-n">1</p>
                             <img className="song__play-icon" src="image/play-icon.png" alt="icon"/>
                         </a>
-                        <div className="song__title">
+                        <div className="flex-container">
                             <img className="song__card-icon" src="image/1.jpg" alt="icon"/>
                             <div>
                                 <h3 className="song__name">Timeless</h3>
@@ -99,7 +78,7 @@ function Album() {
                             <p className="song__number-n">1</p>
                             <img className="song__play-icon" src="image/play-icon.png" alt="icon"/>
                         </a>
-                        <div className="song__title">
+                        <div className="flex-container">
                             <img className="song__card-icon" src="image/1.jpg" alt="icon"/>
                             <div>
                                 <h3 className="song__name">Timeless</h3>
@@ -117,23 +96,6 @@ function Album() {
                     </div>
                 </div>
             </main>
-            <footer className="footer">
-                <div className="footer-login__song">
-                    <img className="footer-login__song-icon" src="image/1.jpg" alt="icon"/>
-                    <div className="footer-login__song-info">
-                        <a className="font-color-white link">Timeless</a>
-                        <a className="footer-login__song-author link">Cristoforo Giordano</a>
-                    </div>
-                </div>
-                <div className="footer-login__player">
-                    <img className="footer-login__player-icon" src="image/begin.png" alt="icon"/>
-                    <img className="footer-login__player-icon" src="image/footer-play-icon.png" alt="icon"/>
-                    <img className="footer-login__player-icon" src="image/end.png" alt="icon"/>
-                </div>
-                <div className="footer-login__info">
-                    <img className="footer-login__sound-icon" src="image/sound-icon.png" alt="icon"/>
-                </div>
-            </footer>
         </div>
     );
 }
