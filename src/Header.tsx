@@ -1,13 +1,17 @@
-import React from 'react';
+import React, {useEffect} from 'react';
+import {Api} from "./Api";
 
 function Header() {
+    useEffect(()=>{
+        Api.header_navigation()
+    },[])
     return(
         <header className="header">
             <nav className="header__navigation">
-                <a href="/" className="link header__pointer">
-                    назад
-                </a>
-                <a href="/" className="link header__pointer">вперед</a>
+                <button className="link header__pointer">
+                    {'<'}
+                </button>
+                <button className="link header__pointer">{'>'}</button>
             </nav>
         </header>
     );
